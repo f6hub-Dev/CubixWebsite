@@ -7,11 +7,24 @@
 
 body {
   height: 100vh;
-  background: radial-gradient(circle at center, #9b5cff33, #000);
+  background: radial-gradient(circle at center, #a855f744, #000);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  animation: pulseBg 4s ease-in-out infinite;
+}
+
+@keyframes pulseBg {
+  0% {
+    background: radial-gradient(circle at center, #a855f733, #000);
+  }
+  50% {
+    background: radial-gradient(circle at center, #c084fc55, #000);
+  }
+  100% {
+    background: radial-gradient(circle at center, #a855f733, #000);
+  }
 }
 
 .container {
@@ -19,27 +32,27 @@ body {
 }
 
 .logo {
-  width: 130px;
+  width: 120px;
   margin-bottom: 20px;
-  filter: drop-shadow(0 0 20px #9b5cff);
+  filter: drop-shadow(0 0 25px #c084fc);
 }
 
 h1 {
   font-size: 44px;
-  color: #b266ff;
+  color: #c084fc;
   text-shadow:
-    0 0 10px #b266ff,
-    0 0 25px #7a1fff;
+    0 0 15px #c084fc,
+    0 0 35px #9333ea;
 }
 
 .version {
   display: inline-block;
-  margin: 10px 0 20px;
-  padding: 6px 16px;
-  border: 1px solid #9b5cff;
+  margin: 12px 0 20px;
+  padding: 6px 18px;
   border-radius: 20px;
-  color: #b266ff;
-  box-shadow: 0 0 10px #9b5cff;
+  background: #9333ea33;
+  color: #e9d5ff;
+  box-shadow: 0 0 15px #c084fc;
 }
 
 p {
@@ -49,27 +62,27 @@ p {
 
 .btn {
   display: inline-block;
-  padding: 16px 38px;
-  background: linear-gradient(135deg, #9b5cff, #5a00ff);
+  padding: 18px 45px;
+  background: linear-gradient(135deg, #a855f7, #6d28d9);
   color: white;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 14px;
+  border-radius: 16px;
   box-shadow:
-    0 0 20px #9b5cff,
-    0 0 40px #5a00ff;
+    0 0 25px #a855f7,
+    0 0 50px #6d28d9;
   transition: 0.3s;
 }
 
 .btn:hover {
-  transform: scale(1.07);
+  transform: scale(1.08);
   box-shadow:
-    0 0 30px #b266ff,
-    0 0 60px #7a1fff;
+    0 0 40px #c084fc,
+    0 0 80px #7c3aed;
 }
 
 .footer {
-  margin-top: 25px;
+  margin-top: 28px;
   font-size: 13px;
   opacity: 0.6;
 }
